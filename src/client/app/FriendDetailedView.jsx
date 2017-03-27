@@ -76,7 +76,6 @@ class FriendDetailedView extends React.Component {
   }
 
   render() {
-    //const friends = ['Anthony', 'David', 'Nick', 'Gus'];
 
     let inButtonText = this.state.accepted === false ? 'I\'m In' : 'I\'m In!';
     let outButtonText = this.state.rejected === false ? 'I\'m Out' : 'Delete';

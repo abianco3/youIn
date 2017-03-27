@@ -23,14 +23,3 @@ db.task(t => {
 .then((result) => res.status(201).send('updated users_events table') );
 
 };
-
-//   let promises = [];
-//   Promise.all(promises)
-//   .then( (result) => {
-
-//   console.log('result from query in add_users_events.js', result);
-//   res.status(201).json(result);
-// })
-// .catch( (err) => {
-//   res.status(404).send(err, "Invalid user_id, please login");
-// })

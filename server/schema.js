@@ -4,10 +4,6 @@ const pgp = require('pg-promise')();
 
 module.exports = (db) => {
 
-  // if (!db.queryAsync) {
-  //   db = Promise.promisifyAll(db);
-  // }
-
   return db.query('CREATE type status AS ENUM(\'pending\', \'accepted\', \'rejected\');')
   .catch( (err) => {
     if (err.code !== '42710') {
